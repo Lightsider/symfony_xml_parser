@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clients>
+    <client id="5a153d02a8b116f18e940050569b68aa">
+        <membership_date>2019-05-04 11:00:01</membership_date>
+        <name>Гриша Мишин</name>
+        <age>18</age>
+        <city>Moscow</city>
+        <numbers>
+            <number>+79999912313</number>
+            <number>+76666666666</number>
+        </numbers>
+    </client>
+    <client id="1a147d02a8asdasdasdb111e98e940050569b68ad">
+        <membership_date>2019-03-02 19:43:58</membership_date>
+        <name>Ололоша Ололоев</name>
+        <age>19</age>
+        <city>Bryansk</city>
+        <numbers>
+            <number>+7999998678678</number>
+            <number>+7666666666666</number>
+        </numbers>
+    </client>
+    <client id="1a147d02a8b111e98e940asdasd050569b68ad">
+        <membership_date>2019-03-02 19:43:58</membership_date>
+        <name>Ололоша2 Ололоев</name>
+        <age>19</age>
+        <city>Bryansk</city>
+        <numbers>
+            <number>+7934998678678</number>
+            <number>+7666666666666</number>
+        </numbers>
+    </client>
+    <client id="1a147d21321302a8b111e98e940050569b68ad">
+        <membership_date>2019-03-02 19:43:58</membership_date>
+        <name>Ололоша3 Ололоев</name>
+        <age>19</age>
+        <city>Bryansk</city>
+        <numbers>
+            <number>+7999998678678</number>
+            <number>+7666666666666</number>
+        </numbers>
+    </client>
+    <client id="1a147d02a8b111e98e912312321340050569b68ad">
+        <membership_date>2019-03-02 19:43:58</membership_date>
+        <name>Ололоша4 Ололоев</name>
+        <age>19</age>
+        <city>Bryansk</city>
+        <numbers>
+            <number>+7999998678678</number>
+            <number>+7666666666666</number>
+        </numbers>
+    </client>
+    <client id="1a147d02a31238b111e98e940050569b68ad">
+        <membership_date>2019-03-02 19:43:58</membership_date>
+        <name>Ололоша5 Ололоев</name>
+        <age>19</age>
+        <city>Vryansk</city>
+        <numbers>
+            <number>+7999998678678</number>
+            <number>+7666666666666</number>
+        </numbers>
+    </client>
+    <client id="1a147d01232132a8b111e98e940050569b68ad">
+        <membership_date>2019-03-02 19:43:58</membership_date>
+        <name>Ололоша Ололоев</name>
+        <age>19</age>
+        <city>Bryansk</city>
+        <numbers>
+            <number>+7999998678678</number>
+            <number>+7666666666666</number>
+        </numbers>
+    </client>
+    <client id="1a147d02123123a8b111e98e940050569b68ad">
+        <membership_date>2020-03-02 19:43:58</membership_date>
+        <name>Ололоша Ололоев</name>
+        <age>19</age>
+        <city>Bryansk</city>
+        <numbers>
+            <number>+7999998678678</number>
+            <number>+7666666666666</number>
+        </numbers>
+    </client>
+    <client id="1a147d02a8b111e98e940050561232139b68ad">
+        <membership_date>2020-06-02 19:43:58</membership_date>
+        <name>Ололоша Ололоев</name>
+        <age>19</age>
+        <city>Bryansk</city>
+        <numbers>
+            <number>+7999998678678</number>
+            <number>+7666666666666</number>
+        </numbers>
+    </client>
+    <client id="1a147d02123123a8b111e98e940050569b68ad">
+        <membership_date>2019-03-02 19:43:58</membership_date>
+        <name>Гоша Ололоев</name>
+        <age>19</age>
+        <city>Bryansk</city>
+        <numbers>
+            <number>+7999998678678</number>
+            <number>+7666666666666</number>
+        </numbers>
+    </client>
+    <client id="1a147d02a8b111e98e940050123213569b68ad">
+        <membership_date>2019-03-02 19:43:58</membership_date>
+        <name>Ололоша Ололоев</name>
+        <age>19</age>
+        <city>Barnaul</city>
+        <numbers>
+            <number>+7999998678678</number>
+            <number>+7666666666666</number>
+        </numbers>
+    </client>
+    <client id="1a14713123d02a8b111e98e940050569b68ad">
+        <membership_date>2019-03-02 19:43:58</membership_date>
+        <name>Ололоша Ололоев</name>
+        <age>19</age>
+        <city>Moscow</city>
+        <numbers>
+            <number>+7999998678678</number>
+            <number>+7666666666666</number>
+        </numbers>
+    </client>
+    <client id="1a147d02a8b111e98e940050123213569b68ad">
+        <membership_date>2019-03-02 19:43:58</membership_date>
+        <name>Ололоша Ололоев</name>
+        <age>56</age>
+        <city>Bryansk</city>
+        <numbers>
+            <number>+7999998678678</number>
+            <number>+76666666666</number>
+        </numbers>
+    </client>
+    <client id="1a147d02a8b111e98e940051232130569b68ad">
+        <membership_date>2019-03-02 19:43:58</membership_date>
+        <name>Ололоша Ололоев</name>
+        <age>43</age>
+        <city>Bryansk</city>
+        <numbers>
+            <number>+7999998678678</number>
+            <number>+76666666666</number>
+        </numbers>
+    </client>
+    <client id="1a147d02a8b111e91231238e940050569b68ad">
+        <membership_date>2019-03-02 19:43:58</membership_date>
+        <name>Ололоша Ололоев</name>
+        <age>21</age>
+        <city>Bryansk</city>
+        <numbers>
+            <number>+7999998678678</number>
+            <number>+76666666666</number>
+        </numbers>
+    </client>
+    <client id="1a147d02a8b111e232398e940050569b68ad">
+        <membership_date>2019-03-02 19:43:58</membership_date>
+        <name>Ололоша Ололоев</name>
+        <age>19</age>
+        <city>Bryansk</city>
+        <numbers>
+            <number>+79237922775</number>
+            <number>+76666666666</number>
+        </numbers>
+    </client>
+    <client id="1a147d02a8b11132323e98e940050569b68ad">
+        <membership_date>2019-03-02 19:43:58</membership_date>
+        <name>Паша Ололоев</name>
+        <age>19</age>
+        <city>Bryansk</city>
+        <numbers>
+            <number>+7999998678678</number>
+            <number>+76666666666</number>
+        </numbers>
+    </client>
+    <client id="1a147d02a8b1112323e98e940050569b68ad">
+        <membership_date>2019-03-02 19:43:58</membership_date>
+        <name>Маша Ололоев</name>
+        <age>19</age>
+        <city>Bryansk</city>
+        <numbers>
+            <number>+7999998678678</number>
+            <number>+76666666666</number>
+        </numbers>
+    </client>
+</clients>

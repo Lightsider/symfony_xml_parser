@@ -1,0 +1,110 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Тестовое задание{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('asset/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('asset/css/style.css') }}">
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('asset/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('asset/js/jquery.tablesorter.js') }}"></script>
+    <script src="{{ asset('asset/js/main.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+        <div class="container">
+            <a href="../" class="navbar-brand">XML parser</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="page-header">
+            <div class="row">
+                <div class="col-lg-8 col-md-7 col-sm-6">
+                    <h1>XML parser</h1>
+                    <p class="lead">by Andrey Popov</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bs-docs-section clearfix mb-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="page-header">
+                        <h1>Actions</h1>
+                    </div>
+                    <a href="{{ path('parseXML') }}" class="btn btn-primary">Parse XML from project root</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="bs-docs-section clearfix">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-header">
+                        <h1>Table</h1>
+                    </div>
+                    {% if clients is not empty%}
+                    <table class="table table-hover" id="clients_table">
+                        <thead>
+                            <tr>
+                                <th scope="col">id</th>
+                                <th scope="col">XML id</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Age</th>
+                                <th scope="col">City</th>
+                                <th scope="col">Membership date</th>
+                                <th scope="col">...</th>
+                            </tr>
+                            <tr class='table-filters'>
+                                <td><input type="number" name="id" id="id_filter"></td>
+                                <td><input type="text" name="client_xml_id" id="client_xml_id_filter"></td>
+                                <td><input type="text" name="name" id="name_filter"></td>
+                                <td><input type="number" name="age" id="age_filter"></td>
+                                <td><input type="text" name="city" id="city_filter"></td>
+                                <td><input type="date" name="membership_date" id="membership_date_filter"></td>
+                                <td>...</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        {% for client in clients %}
+                        <tr class='table-data'>
+                            <td>{{ client.id }}</td>
+                            <td>{{ client.clientXmlId }}</td>
+                            <td>{{ client.name }}</td>
+                            <td>{{ client.age }}</td>
+                            <td>{{ client.city }}</td>
+                            <td>{{ client.membershipDate.format('Y-m-d H:i:s') }}</td>
+                            <td><a href="#phone-modal" class="btn btn-primary show-phones" data-phones="{{ client.getPhonesClear()|json_encode() }}" data-client_id="{{ client.id }}">Show phones</a></td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                    {% else %}
+                        <p> Clients not found </p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div id="phone-modal" class="modal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Phone numbers</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}

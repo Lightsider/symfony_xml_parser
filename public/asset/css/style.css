@@ -1,0 +1,25 @@
+.table th {
+    cursor: pointer;
+}
+
+.table th.headerSortDown::before {
+    content: '↓ ';
+}
+.table th.headerSortUp::before {
+    content: '↑ ';
+}
+
+.modal {
+    background-color: #00000078;
+    opacity: 0;
+    /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+.visible {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
