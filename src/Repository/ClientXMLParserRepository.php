@@ -29,8 +29,8 @@ class ClientXMLParserRepository extends EntityRepository
         $xml = file_get_contents($projectRoot."/clients.xml");
 
         if(!empty($xml)) {
+            $entityManager = $this->_em;
             $main_crawler = new Crawler($xml);
-
 
             $crawler = $main_crawler->filter('clients client');
 
@@ -44,8 +44,6 @@ class ClientXMLParserRepository extends EntityRepository
                     $properties[$property_crawler->nodeName()] = $property_crawler->text();
                 }
                 $phones = explode(" ", $properties["numbers"]);
-
-                $entityManager = $this->_em;
 
                 $client_entity = $entityManager->getRepository(Client::class)->findBy(["client_xml_id" => $client_id]);
                 if (!$client_entity) {
